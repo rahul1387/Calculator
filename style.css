@@ -1,112 +1,58 @@
-body
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
 {
     margin: 0;
     padding: 0;
-    color: white;
-    background-color: black;
+    font-family: 'Poppins', sans-serif;
 }
-.navigation 
+.container
 {
-    display: flex;
-    font-size: 20px;
-}
-li 
-{
-    font-family: 'Bree Serif', serif;
-    list-style: none;
-    padding: 34px 23px;
-}
-a 
-{
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s;
-}
-a:hover
-{
-    color: #009688;
-}
-h1 
-{
-    font-family: 'Bree Serif', serif;
-    font-size: 50px;
-}
-p 
-{
-    font-family: 'Bree Serif', serif;
-    font-size: 20px;
-    text-align: center;
-}
-section 
-{
+    width: 100%;
+    height: 100vh;
+    background-color: #159c9c;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 800px;
-    margin: 3px 230px;
+    font-weight: 200;
+}
+.calculator
+{
+    background-color: #3a4452;
+    border: 2px solid white;
+    padding: 1em;
+    border-radius: 10px;
 }
 
-header::before 
+input
 {
-    background: url('img/editors-keys-h63fLedowK8-unsplash.jpg') no-repeat center center/cover;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.3;
-}
-#sub-btn
-{
-    width: 190px;
-    height: 50px;
-    border-radius: 5px;
-    border-style: none;
-    background: transparent;
-    border: 2px solid white;
+    border: 0;
+    outline: 0;
+    width: 4em;
+    height: 4em;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    font-size: 1em;
     color: white;
-    transition: all 0.5s;
-    font-family: 'Bree Serif', serif;
-    font-size: 20px;
-}
-#sub-btn:hover
-{
-    background-color: white;
-    color: black;
     cursor: pointer;
+    margin: 0.5em;
 }
-#inpt1
+
+.display_result
 {
-    background-color: transparent;
-    height: 30px;
-    border-radius: 5px;
-    border-style: none;
-    border: 1px solid white;
-    color: white;
+    display: flex;
+    justify-content: flex-end;
 }
-#inpt2
+.display_result input
 {
-    background-color: transparent;
-    height: 30px;
-    border-radius: 5px;
-    border-style: none;
-    border: 1px solid white;
-    color: white;
+    text-align: right;
+    flex: 1;
+    font-size: 2em;
+    box-shadow: none;
 }
-#inpt1::placeholder
+.equal
 {
-    color: white;
-}
-#inpt2::placeholder
-{
-    color: white;
-}
-.noSpinner::-webkit-inner-spin-button,
-.noSpinner::-webkit-inner-spin-button 
-{
-  -webkit-appearance: none;
-  margin: 0;
+    width: 9em;
 }
